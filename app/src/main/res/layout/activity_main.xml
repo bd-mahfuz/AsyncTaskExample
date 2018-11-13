@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahfuz.asynctaskexample.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        tools:text="count!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/countTv" />
+
+    <Button
+        android:id="@+id/startBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Start loop" />
+
+    <Button
+        android:id="@+id/stopBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startBt"
+        android:layout_alignStart="@+id/startBt"
+        android:layout_below="@+id/startBt"
+        android:layout_marginTop="16dp"
+        android:text="Stop loop" />
+
+    <Button
+        android:id="@+id/asyncBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stopBt"
+        android:layout_alignStart="@+id/stopBt"
+        android:layout_below="@+id/stopBt"
+        android:layout_marginTop="49dp"
+        android:text="Async" />
+
+</RelativeLayout>
